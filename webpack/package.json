@@ -4,18 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode=development"
+    "start": "webpack --mode=development",
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/mini-css-extract-plugin": "^2.5.1",
+    "cross-env": "5.1.5",
     "css-loader": "0.28.11",
     "mini-css-extract-plugin": "0.4.0",
     "node-sass": "8.0.0",
+    "optimize-css-assets-webpack-plugin": "4.0.1",
     "sass-loader": "7.0.1",
     "style-loader": "0.21.0",
+    "uglifyjs-webpack-plugin": "1.2.5",
     "webpack": "4.8.1",
     "webpack-cli": "2.1.3"
   }
