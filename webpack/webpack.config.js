@@ -10,6 +10,10 @@ module.exports = {
       filename: 'principal.js',
       path: __dirname + '/public'
   }, 
+  devServer: {
+    contentBase: "./public",
+    port: 8080
+  },
   optimization: {
     minimizer: [
         new UglifyJsPlugin({
@@ -34,6 +38,9 @@ module.exports = {
         'css-loader', // interpretar @import, url()...
         'sass-loader',
       ]
+    }, {
+        test: /\.(png|svg|jpg|gif|jpeg)$/,
+        use: ['file-loader']
     }]
   }
 
