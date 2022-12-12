@@ -1,8 +1,24 @@
-// Não conseguiu importar, será preciso fazer uma 'tradução'
-// usando o babel, para fazer o código mais novo ser convertido
-// para um códigom mais antigo, destá forma o browser irá entender.
+const produto = {
+    nome: 'Caneta Bic Preta',
+    preco: 1.90,
+    desconto: 0.05
+}
 
-import Pessoa from "./pessoa"
+function clone(objeto) {
+    return { ...objeto }
+}
 
-const pessoa = new Pessoa('Gabriel Sappio')
-console.log(pessoa.toSring())
+const novoProdutoDesconto = clone(produto)
+novoProdutoDesconto.nome = 'Caneta Bic Azul'
+novoProdutoDesconto.desconto = 0.1
+
+const novoValor = clone(produto)
+novoValor.preco = 2.50
+
+const novoDesconto = clone(produto)
+novoDesconto.desconto = 0.1
+
+
+console.log(produto, novoProdutoDesconto)
+console.log(produto, novoValor)
+console.log(produto, novoDesconto)
