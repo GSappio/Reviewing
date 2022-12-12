@@ -22,3 +22,4 @@ novoDesconto.desconto = 0.1
 console.log(produto, novoProdutoDesconto)
 console.log(produto, novoValor)
 console.log(produto, novoDesconto)
+
