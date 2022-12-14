@@ -13,6 +13,7 @@ class Field extends Component {
         )
     }
 }
+
 function mapStateToProps(state) {
     return {
         value: state.field.value
